@@ -19,11 +19,11 @@
 
                     { name: 'EId', type: 'number' },
                     { name: 'EName', type: 'string' },
-                    { name: 'Email', type: 'string' },
-                    { name: 'ESalary', type: 'float' },
+                    { name: 'EDesig', type: 'string' },
+                    { name: 'EDOJ', type: 'string' },
 
                 ],
-                url: 'http://localhost:60531/odata/Emps'
+                url: 'http://localhost:64458/odata/Emps'
             }
             var dataAdapter = new $.jqx.dataAdapter(source);
             // displaying data in the grid with jqxGrid
@@ -37,8 +37,8 @@
 
                         { text: "Employee Id", datafield: "EId" },
                         { text: "Name", datafield: "EName" },
-                        { text: "Email", datafield: "Email" },
-                        { text: "Salary", datafield: "ESalary" },
+                        { text: "Email", datafield: "EDesig" },
+                        { text: "Salary", datafield: "EDOJ" },
 
                     ]
                 });
