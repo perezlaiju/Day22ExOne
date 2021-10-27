@@ -35,11 +35,13 @@
             @Html.DisplayFor(modelItem => item.EDOJ)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.EId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.EId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.EId })
+            @Html.ActionLink("Edit", "Edit", new { id = item.EId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.EId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.EId })
         </td>
     </tr>
 }
 
 </table>
+
+@Html.Partial("ourpview")
